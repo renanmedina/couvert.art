@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace App\Accounts\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -20,6 +20,9 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'facebook_user_id',
+        'avatar_url',
+        'facebook_token_data'
     ];
 
     /**
@@ -42,6 +45,7 @@ class User extends Authenticatable
         return [
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
+            'facebook_token_data' => 'json'
         ];
     }
 }
