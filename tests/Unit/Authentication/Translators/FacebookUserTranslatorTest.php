@@ -19,12 +19,12 @@ describe('translateToUserData', function() {
     });
 
     it('creates a subarray with token information', function() use ($translatedData) {
-        $exceptedKeys = ["access_token","refresh_token", "created_at", "expires_in", "expires_at"];
-        expect(array_keys($translatedData['facebook_token_data']))->toMatchArray($exceptedKeys);
+        $expectedKeys = ["access_token","refresh_token", "created_at", "expires_in", "expires_at"];
+        expect(array_keys($translatedData['facebook_token_data']))->toMatchArray($expectedKeys);
     });
 
     it('returns an array of \App\Accounts\Models\User fillable fields', function() use ($translatedData) {
-        $exceptedKeys = [
+        $expectedKeys = [
             'facebook_user_id',
             'facebook_token_data',
             'name',
@@ -32,6 +32,6 @@ describe('translateToUserData', function() {
             'avatar_url',
             'password'
         ];
-        expect(array_keys($translatedData))->toMatchArray($exceptedKeys);
+        expect(array_keys($translatedData))->toMatchArray($expectedKeys);
     });
 });
