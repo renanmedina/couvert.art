@@ -1,8 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Laravel\Socialite\Facades\Socialite;
-
 use App\Frontend\Controllers\HomeController;
 use App\Authentication\Controllers\FacebookAuthController;
 

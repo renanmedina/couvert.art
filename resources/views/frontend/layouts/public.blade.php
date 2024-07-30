@@ -13,9 +13,8 @@
     </style>
     @livewireStyles
   </head>
-  <body>
-    @livewire('home-page')
-
+  <body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    @yield('content')
     @livewireScripts
   </body>
 </html>
