@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers\Frontend;
+namespace App\Frontend\Controllers;
 
-use App\Http\Controllers\Controller;
+use App\Core\Http\Controllers\Controller;
 use Inertia\Inertia;
 
 class HomeController extends Controller
